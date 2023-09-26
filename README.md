@@ -1,1 +1,1 @@
-ÿþ
+console.log("hello world");
