@@ -1,0 +1,7 @@
+    var events = require('Event');
+    var eventEmitter = new events.eventEmitter();
+    setInterval(function(){
+        eventEmitter.emit('hello');
+
+    },10);
+    
