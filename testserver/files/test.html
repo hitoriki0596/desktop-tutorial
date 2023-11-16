@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+    body{
+      background-color: black;
+  }
+  h1{
+      font-style: italic;
+      font-size: 400%;
+      color: crimson ;
+      text-align: center;
+  }
+  p{
+      color:aliceblue;
+      font-size: 300%;
+      text-align: center;
+  
+  }
+    </style>
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Đăng nhập</h2>
+      <form>
+          <div class="input-group">
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" id="username" name="username">
+          </div>
+          <div class="input-group">
+              <label for="password">Mật khẩu:</label>
+              <input type="password" id="password" name="password">
+          </div>
+          <button type="submit">Đăng nhập</button>
+      </form>
+    <h1> Hello World!!!!</h1>
+    <p><strong>Welcome to my World</strong></p>
+    <!-- <a href="https://www.figma.com/file/ewo6OfXUJGVmnWW3pnzRAs/H%E1%BB%8Dc-JS---Nestech---K18?type=whiteboard&node-id=0-1&t=jH7m1IZG9Jiua5fJ-0">
+      <img src="/desktop-tutorial/testserver/picture/BSD/1.jpg" alt="BungouStrayDog" style="width: 1176;;height: 1534;">
+    </a>  -->
+  <a href="https://bungo.fandom.com/vi/wiki/Fyodor_Dostoevsky">
+  <img src="/desktop-tutorial/testserver/picture/BSD/1.jpg" alt="Fyodor">
+  </a>
+
+    <h1 id="clock"></h1>
+
+    <script>
+    function updateClock() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+
+    // Hiển thị giờ trên trình duyệt
+    document.getElementById("clock").innerText = hours + ":" + minutes + ":" + seconds;
+  }
+
+  setInterval(updateClock, 1000);
+
+    
+   </script>
+   
+
+  </body>
+</html>
+
+
